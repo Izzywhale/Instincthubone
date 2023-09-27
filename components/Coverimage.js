@@ -4,7 +4,7 @@ import { useState } from "react";
 import Cardmodal from "./Cardmodal";
 import Linkbox from "./Linkbox";
 import Tabs from "./Tabs";
-import Splashmodal from "./Splashmodal";
+import SplashModal from "./SplashModal";
 // import Linkbox from "./Linkbox";
 
 export default function Coverimage() {
@@ -99,7 +99,7 @@ export default function Coverimage() {
 
           {/* TABBODY4 */}
           <div>
-        {tab === "Unsplash" && <Splashmodal setSelectedImage={setSelectedImage}/>}
+        {tab === "Unsplash" && <SplashModal setSelectedImage={setSelectedImage}/>}
           </div>
         </div>
     
