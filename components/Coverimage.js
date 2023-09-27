@@ -12,6 +12,7 @@ export default function Coverimage() {
   const [tab, setTab] = useState("Gallery");
   const [open, setOpen] = useState(false);
   const [imageUrl, setImageUrl] = useState('');
+  
 
   const tabLinks = ["Gallery", "Upload", "Link", "Unsplash"];
 
@@ -27,6 +28,9 @@ export default function Coverimage() {
   const handleSubmit = event => {
    event.preventDefault(); 
   };
+
+    /* Do something with the uploaded image file */
+    
 
   return (
     <div className="w-full relative">
@@ -83,7 +87,7 @@ export default function Coverimage() {
           {/* TABBODY2 */}
 
           <div>
-            {tab === "Upload" && <Tabs/>}
+            {tab === "Upload" && <Tabs  setSelectedImage={setSelectedImage}/>}
           </div>
 
           {/* TABBODY3 */}

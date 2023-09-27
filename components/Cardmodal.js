@@ -14,7 +14,7 @@ export default function Cardmodal({ setSelectedImage }) {
     "/color2.jpeg",
   ];
   return (
-    <div className="flex flex-col items-start justify-start h-96 overflow-y-auto overflow-x-hidden p-4 w-full">
+    <div className="flex flex-col items-start justify-start h-96 overflow-y-auto overflow-x-hidden p-4 w-full"> 
       <h3 className="font-semibold">COLOR & GRADIENT </h3>
       <span className=" grid md:grid-cols-4 gap-4 mt-4 ">
         {galleryimg.map((item, i) => (
@@ -23,6 +23,7 @@ export default function Cardmodal({ setSelectedImage }) {
             src={item}
             alt={item}
             className="h-20 w-40 "
+            key={i}
           />
         ))}
       </span>
