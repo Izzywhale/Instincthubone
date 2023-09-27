@@ -1,13 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import Cardmodal from "./Cardmodal";
-import Linkbox from "./Linkbox";
+import CardModal from "./CardModal";
+import LinkBox from "./LinkBox";
 import Tabs from "./Tabs";
-import Splashmodal from "./Splashmodal";
+import SplashModal from "./SplashModal";
 // import Linkbox from "./Linkbox";
 
-export default function Coverimage() {
+export default function CoverImage() {
   const [selectedImage, setSelectedImage] = useState("/cover1.jpg");
   const [tab, setTab] = useState("Gallery");
   const [open, setOpen] = useState(false);
@@ -37,7 +37,7 @@ export default function Coverimage() {
       <div className="w-full h-[400px]">
         <img
           src={selectedImage}
-          alt="Coverpicture"
+          alt="CoverPicture"
           className="w-full h-full object-cover"
         />
       </div>
@@ -53,7 +53,7 @@ export default function Coverimage() {
 
       {open === true && (
         <div className="w-[750px] bg-gray-500 flex flex-col gap-0 rounded-md absolute right-24 top-[400px]">
-          {/* TABHEADER */}
+          {/* TabHeader */}
           <div className="w-full border-b flex items-center justify-between gap-6 p-3">
             <ul className="w-fit flex items-center gap-4">
               {tabLinks.map((item, index) => (
@@ -78,28 +78,28 @@ export default function Coverimage() {
             </span>
           </div>
 
-          {/* TABBODY1 */}
+          {/* TabHeader1 */}
 
           <div className="w-full h-fit p-2">
-            {tab === "Gallery" && <Cardmodal  setSelectedImage={setSelectedImage}/>}
+            {tab === "Gallery" && <CardModal  setSelectedImage={setSelectedImage}/>}
           </div>
 
-          {/* TABBODY2 */}
+          {/* TabHeader2 */}
 
           <div>
             {tab === "Upload" && <Tabs  setSelectedImage={setSelectedImage}/>}
           </div>
 
-          {/* TABBODY3 */}
+          {/* TabHeader3 */}
 
           <div className="w-full h-fit p-2 pt-0">
-            {tab === "Link" && <Linkbox setSelectedImage={setSelectedImage}/> }
+            {tab === "Link" && <LinkBox setSelectedImage={setSelectedImage}/> }
 
           </div>
 
-          {/* TABBODY4 */}
+          {/* TabBody4 */}
           <div>
-        {tab === "Unsplash" && <Splashmodal setSelectedImage={setSelectedImage}/>}
+        {tab === "Unsplash" && <SplashModal setSelectedImage={setSelectedImage}/>}
           </div>
         </div>
     

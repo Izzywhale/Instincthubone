@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Linkbox(props) {
+export default function LinkBox(props) {
     const [linkInput, setLinkInput] = useState("")
   const handleNewLink = (e) => {
     setLinkInput(e.target.value);

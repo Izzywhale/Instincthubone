@@ -1,10 +1,10 @@
-import Cardmodal from "@/components/Cardmodal";
-import Coverimage from "@/components/Coverimage";
+import CardModal from "@/components/CardModal";
+import CoverImage from "@/components/CoverImage";
 
 const Homepage = () => {
   return (
     <div className="w-full flex flex-col">
-      <Coverimage />
+      <CoverImage />
     </div>
   );
 };

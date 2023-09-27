@@ -16,14 +16,14 @@ export default function Splashmodal({ setSelectedImage }) {
     return (
         
       <div className="flex flex-col items-start justify-start h-96 overflow-y-auto overflow-x-hidden p-4 w-full">
-        <input type="text" name="" id="searchbox" className="w-[690px] rounded-md p-1 bg-black placeholder:italic shadow-sm" placeholder="Search for an image ..."/>
+        <input type="text" name="" id="searchBox" className="w-[690px] rounded-md p-1 bg-black placeholder:italic shadow-sm" placeholder="Search for an image ..."/>
         <span className=" grid md:grid-cols-4 gap-4 mt-4  ">
-          {galleryimg.map((item, i) => (
+          {galleryImg.map((item, i) => (
             <img
               onClick={() => setSelectedImage(item)}
               src={item}
               alt={item}
-              className="h-20 w-40 object-cover "
+              className="h-20 w-40 object-cover"
             />
           ))}
         </span>
