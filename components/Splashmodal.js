@@ -1,5 +1,5 @@
-export default function Splashmodal({ setSelectedImage }) {
-    const galleryimg = [
+export default function SplashModal({ setSelectedImage }) {
+    const galleryImg = [
       "/robot1.jpg",
       "/robot2.jpg",
       "/robot3.jpg",

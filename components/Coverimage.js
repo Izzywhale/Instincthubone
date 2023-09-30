@@ -5,7 +5,6 @@ import CardModal from "./CardModal";
 import LinkBox from "./LinkBox";
 import Tabs from "./Tabs";
 import SplashModal from "./SplashModal";
-// import Linkbox from "./Linkbox";
 
 export default function CoverImage() {
   const [selectedImage, setSelectedImage] = useState("/cover1.jpg");
