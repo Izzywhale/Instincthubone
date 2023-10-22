@@ -29,7 +29,7 @@ export default function LinkBox(props) {
         />
         <button
           type="submit"
-          className="bg-blue-500 border-blue-500 p-1.5 m-2 rounded-lg hover:bg-sky-700"
+          // className="bg-blue-500 border-blue-500 p-1.5 m-2 rounded-lg hover:bg-sky-700"
         >
           Submit
         </button>

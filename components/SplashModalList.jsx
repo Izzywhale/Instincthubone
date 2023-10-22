@@ -19,18 +19,21 @@ export default function SplashModalList({ setSelectedImage }) {
 
 	return (
 		<div className="flex flex-col items-start justify-start h-96 overflow-y-auto overflow-x-hidden p-4 w-full">
+			<div className="flex justify-center items-center gap-6 ">
 			<input
 				type="text"
 				name=""
 				id="searchbox"
-				className="w-[690px] rounded-md p-1 bg-black placeholder:italic shadow-sm"
+				className="w-[600px] rounded-md p-1 placeholder:italic shadow-sm"
 				placeholder="Search for an image ..."
 				onInput={(e) => setSearchInput(e.target.value)}
 				value={searchInput}
 			/>
-			<button type="button" onClick={getUnsplashObject}>
+			<button type="button" onClick={getUnsplashObject} className="  bg-blue-500 text-white px-3 py-1.5 rounded-md">
 				Search
 			</button>
+
+			</div>
 			<span className=" grid md:grid-cols-4 gap-4 mt-4  ">
 				{data?.results?.map((option, index) => (
 					<img
